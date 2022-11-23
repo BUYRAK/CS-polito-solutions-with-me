@@ -12,12 +12,20 @@ print(f"Most min veriable: {str(min(numberTwo, numberOne))}")
 """
 # 02.1.2 Resistances.
 """
-resistanceOne = "Snake"
-resistanceTwo = "Chicken"
-resistanceThree = "Goat"
-print(f"{resistanceOne[:3]}...{resistanceOne[3:]}")
-print(f"{resistanceTwo[:3]}...{resistanceTwo[3:]}")
-print(f"{resistanceThree[:3]}...{resistanceThree[3:]}")
+r1Value = input("Enter R1 in Ω:")
+r1 = float(r1Value)
+
+r2Value = input("Enter R2 in Ω:")
+r2 = float(r2Value)
+
+r3Value = input("Enter R3 in Ω:")
+r3 = float(r3Value)
+
+R2_R3_Total = (r3 * r2) / (r3 + r2)
+
+R_Total = r1 + R2_R3_Total
+
+print(f"Total Resistance of the Circuit is {R_Total} Ω")
 """
 # 02.1.3 Digits.
 """
@@ -31,5 +39,23 @@ print(f"First number:{stringExpression[:1]} \n"
       f"Fourth number:{stringExpression[3:4]} \n"
       f"Fifth number:{stringExpression[4:5]} \n")
 """
-# 02.1.4 Hybrid car.
 
+# 02.1.4 Hybrid car.
+"""
+def new_car(newCarCost, newCarEstimateKm, newCarEstimateFuelPrice):
+
+    newCarTotalFuel = newCarEstimateKm / newCarEstimateFuelPrice
+
+    newCarTotalFuel *= 1.80
+
+    if newCarEstimateKm*5 >= 100000:
+        totalCost = newCarTotalFuel + newCarCost + 3000
+    else:
+        totalCost = newCarTotalFuel + newCarCost
+
+    print(f"Total cost after 5 years: {totalCost}")
+
+new_car(12000,13500,7.5)
+"""
+
+# 02.1.5 Electric force.
