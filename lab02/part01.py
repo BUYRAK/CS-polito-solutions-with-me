@@ -57,5 +57,17 @@ def new_car(newCarCost, newCarEstimateKm, newCarEstimateFuelPrice):
 
 new_car(12000,13500,7.5)
 """
+# 02.1.5 Electric force.
+"""
+EPSILON = 8.854 * (10 ** (-12))
+PI = 3.14
+
+Q1 = float(input("Q1 in Coulomb:"))
+Q2 = float(input("Q2 in Coulomb:"))
+r = float(input("r in Meters:"))
 
 
+F = (Q1 * Q2) / (4 * PI * EPSILON * (r**2))
+
+print(f"The electric force is {F} N.")
+"""
