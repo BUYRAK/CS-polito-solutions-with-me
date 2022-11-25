@@ -6,3 +6,4 @@ Hello Guys, I'm Burak Bilici I'm studying at Polito my solutions are included in
 ## I used
 
 - [Python Cowsay](https://pypi.org/project/cowsay/) for cowsay ^^
+- [Unicode](https://home.unicode.org/emoji/emoji-frequency/) Unicode Emoji Frequency ^^
