@@ -22,4 +22,4 @@ while y < numOfNumber-1:
         sumTotal = firstValue + secondValue
         print(sumTotal)
 """
-# 04.1.2 String analysis.
+
