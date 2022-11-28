@@ -1,3 +1,3 @@
 # 04.1.1 Integer numbers.
 
-number = []
+number = [1,2,3]
