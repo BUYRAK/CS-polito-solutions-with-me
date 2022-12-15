@@ -88,7 +88,28 @@ def main():
                 print(array_1_9.pop(i))
         i += 1
     """
-    # Part 1.1/10
+    # Part 1.2/1
+    """
+    l = []
+    for i in range(1, 11):
+        l.append(i) 
+    print(l)
+    """
+    # Part 1.2/2
+    """
+    l = []
+    x = 0
+    for i in range(0, 11):
+        l.append(x)
+        x += 2
+    print(l)
+    """
+    # Part 1.2/4
+    """
+    l = []
+    for i in range(10):
+        l.append(0)
+    """
 
 
 if __name__ == "__main__":
