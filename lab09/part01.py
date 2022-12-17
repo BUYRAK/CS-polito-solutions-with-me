@@ -1,3 +1,6 @@
+import random
+
+
 def main():
     # Part 1.1/1
     """
@@ -104,12 +107,81 @@ def main():
         x += 2
     print(l)
     """
+    # Part 1.2/3
+    """
+    l = []
+    for i in range(0, 11):
+        n = i ** 2
+        l.append(n)
+    print(l)
+    """
     # Part 1.2/4
     """
     l = []
     for i in range(10):
         l.append(0)
     """
+    # Part 1.2/6
+    """
+    l = []
+
+    for i in range(1, 11):
+        l.append(i ** 2)
+
+    l = [0]
+    for i in range(1, 10):
+        if l[-1] == 0:
+            l.append(1)
+        else:
+            l.append(0)
+
+    print(l)
+    """
+    # Part 1.2/7
+    """
+    l = []
+    x = 0
+    for i in range(1, 11):
+        if x > 4:
+            x = 0
+
+        l.append(x)
+        x += 1
+
+    print(l)
+    """
+    # Part 1.3
+    """
+    for i in range(5):
+        number = random.randint(10, 50)
+        star = "*"
+        print(number * star)
+    """
+    # Part 1.4
+    """
+    l = [-1, -20, -3, -7, -19]
+    x = 0
+    for i in l:
+        star = "*"
+        print(abs(l[x]) * star)
+        x += 1
+    """
+    # Part 1.5
+    """
+    countries = []
+    country_stars = []
+    for i in range(5):
+        country = input("Please enter a Country: ")
+        countries.append(country)
+        country_star = input("Please enter star of the country: ")
+        country_stars.append(int(country_star))
+    x = 0
+    for i in countries:
+        star = "*"
+        print(f"{countries[x]}: {country_stars[x] * star}")
+        x += 1
+    """
+    # Part 1.6
 
 
 if __name__ == "__main__":
